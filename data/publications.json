@@ -1,0 +1,213 @@
+{
+  "_note": "Source of truth for publications.html. Edit this file, then run: python3 tools/build_publications.py. Facts come from LRJ_CV_external_2026_RFRF.docx. Entries with gated:true render inside an HTML comment until Louis approves (Decision 1).",
+  "papers": [
+    {
+      "authors": "Joslyn LR*, Jafarnejad M*, Yadav R, Holder PG, Sanjabi S, Shivva V, Ramanujan S, Hosseini I",
+      "title": "A quantitative systems pharmacology model to inform clinical translation of dynamic PKPD relationships of engineered IL-15",
+      "venue": "Eur J Pharm Sci",
+      "year": 2025,
+      "url": "https://www.sciencedirect.com/science/article/pii/S092809872500301X",
+      "note": "* co-first"
+    },
+    {
+      "authors": "Spinosa P, Joslyn LR, Ramanujan S, Gadkar K, Hosseini I",
+      "title": "A generalized minimal PBPK-PD model of bispecific antibodies: case studies and applications in drug development",
+      "venue": "CPT Pharmacometrics Syst Pharmacol",
+      "year": 2025
+    },
+    {
+      "authors": "Li R, Grosskopf AK, Joslyn LR, Stefanich E, Shivva V",
+      "title": "Cellular kinetics and biodistribution of adoptive T cell therapies: from biological principles to effects on patient outcomes",
+      "venue": "AAPS J",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1208/s12248-025-01017-w"
+    },
+    {
+      "authors": "Joslyn LR*, Huang W*, Miles D, Hosseini I, Ramanujan S",
+      "title": "Digital twins elucidate critical role of Tscm in persistence of TCR-engineered T cells in patients with solid tumors",
+      "venue": "npj Syst Biol Appl",
+      "volume": "10:11",
+      "year": 2024,
+      "doi": "10.1038/s41540-024-00335-7",
+      "note": "* co-first"
+    },
+    {
+      "authors": "Yadav R, Schubbert S, Holder PG, Chiang EY, Kiabi N, Bogaert L, Leung I, … Joslyn LR, Hosseini I, … Shivva V, et al.",
+      "title": "Translational PK/PD and the first-in-human dose selection of a PD1/IL15: an engineered recombinant targeted cytokine for cancer immunotherapy",
+      "venue": "Front Pharmacol",
+      "volume": "15:1380000",
+      "year": 2024
+    },
+    {
+      "authors": "Joslyn LR, Flynn JL, Kirschner DE, Linderman JJ",
+      "title": "Concomitant immunity to M. tuberculosis infection",
+      "venue": "Sci Rep",
+      "volume": "12:20731",
+      "year": 2022
+    },
+    {
+      "authors": "Joslyn LR, Linderman JJ, Kirschner DE",
+      "title": "A virtual host model of Mycobacterium tuberculosis infection identifies early immune events as predictive of infection outcomes",
+      "venue": "J Theor Biol",
+      "volume": "539:111042",
+      "year": 2022,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9169921/"
+    },
+    {
+      "authors": "Renardy M, Joslyn LR, Millar JA, Kirschner DE",
+      "title": "To Sobol or not to Sobol? The effects of sampling schemes in systems biology applications",
+      "venue": "Math Biosci",
+      "volume": "337:108593",
+      "year": 2021
+    },
+    {
+      "authors": "Joslyn LR, Kirschner DE, Linderman JJ",
+      "title": "CaliPro: a calibration protocol that utilizes parameter density estimation to explore parameter space and calibrate complex biological models",
+      "venue": "Cell Mol Bioeng",
+      "year": 2020,
+      "doi": "10.1007/s12195-020-00650-z"
+    },
+    {
+      "authors": "Wessler T†, Joslyn LR†, Borish HJ, Gideon HP, Flynn JL, Kirschner DE, Linderman JJ",
+      "title": "A computational model tracks whole-lung Mycobacterium tuberculosis infection and predicts factors that inhibit dissemination",
+      "venue": "PLoS Comput Biol",
+      "year": 2020,
+      "note": "† co-first"
+    },
+    {
+      "authors": "Houben RM, Esmail H, Emery JC, Joslyn LR, McQuaid CF, Menzies NA, Sanz J, Shrestha S, White RG, Yang C, Cobelens F",
+      "title": "Spotting the old foe: revisiting the case definition for TB",
+      "venue": "Lancet Respir Med",
+      "volume": "7(3):199-201",
+      "year": 2019
+    },
+    {
+      "authors": "Joslyn LR, Pienaar E, DiFazio RM, Suliman S, Kagina BM, Flynn JL, Scriba TJ, Linderman JJ, Kirschner DE",
+      "title": "Integrating non-human primate, human, and mathematical studies to determine the influence of BCG timing on H56 vaccine outcomes",
+      "venue": "Front Microbiol",
+      "volume": "9:1734",
+      "year": 2018
+    },
+    {
+      "authors": "Wong EA†, Joslyn LR†, Grant NL, Klein E, Lin PL, Kirschner DE, Flynn JL",
+      "title": "Low levels of T cell exhaustion in tuberculous lung granulomas",
+      "venue": "Infect Immun",
+      "volume": "86(9):e00426-18",
+      "year": 2018,
+      "doi": "10.1128/IAI.00426-18",
+      "note": "† co-first"
+    },
+    {
+      "authors": "Cicchese JM†, Evans S†, Hult C†, Joslyn LR†, Wessler T†, Millar JA, Marino S, Cilfone NA, Mattila JT, Linderman JJ, Kirschner DE",
+      "title": "Dynamic balance of pro- and anti-inflammatory signals controls disease and limits pathology",
+      "venue": "Immunol Rev",
+      "volume": "285(1):147-167",
+      "year": 2018,
+      "note": "† co-first"
+    },
+    {
+      "authors": "Joslyn LR, Croson C, Reed S",
+      "title": "Determining critical locations in a road network",
+      "venue": "SIAM Undergraduate Research Online (SIURO)",
+      "volume": "7",
+      "year": 2014
+    }
+  ],
+  "abstracts": [
+    {
+      "authors": "Joslyn LR, Ebers M, Lu J, Ramanujan S, Hosseini I",
+      "title": "A pharmacologically-informed neural ordinary differential equation framework to predict preclinical pharmacokinetics",
+      "venue": "American Conference on Pharmacometrics (ACoP)",
+      "year": 2024,
+      "note": "Poster, November 13, 2024"
+    }
+  ],
+  "chapters": [
+    {
+      "authors": "Joslyn LR†, Renardy M†, Weissman C, Grant NL, Flynn JL, Butler JR, Kirschner DE",
+      "title": "Temporal and spatial analyses of TB granulomas to predict long-term outcomes",
+      "venue": "In: Vodovotz Y, An G, eds. Complex Systems and Computational Biology Approaches to Acute Inflammation: A Framework for Model-based Precision Medicine",
+      "year": 2021,
+      "note": "† co-first"
+    }
+  ],
+  "patents": [
+    {
+      "authors": "Joslyn L, Jafarnejad M, Hosseini I, Ramanujan S",
+      "title": "Systems and methods for quantitative pharmacological modeling of PK-PD relationships in cytokine-based cancer immunotherapy",
+      "venue": "Patent application",
+      "year": 2021
+    },
+    {
+      "authors": "Joslyn L, Hosseini I, Ramanujan S",
+      "title": "T-cell therapy QSP model and method of application thereof",
+      "venue": "Patent application",
+      "year": 2022
+    },
+    {
+      "authors": "Joslyn L, Hosseini I",
+      "title": "Prediction of preclinical pharmacokinetics using a neural ordinary differential equation framework",
+      "venue": "Patent application",
+      "year": 2025
+    },
+    {
+      "authors": "Joslyn L, Hosseini I",
+      "title": "LUCY: a platform for agentic mechanistic model development",
+      "venue": "Provisional patent application",
+      "year": 2026
+    },
+    {
+      "authors": "Joslyn L, Li R, Hosseini I",
+      "title": "LEAP: a bioinformatics platform for predicting target mediated drug disposition",
+      "venue": "Provisional patent application",
+      "year": 2026
+    }
+  ],
+  "talks": [
+    {
+      "title": "A platform model to predict preclinical and clinical PK, efficacy and safety of ADCs",
+      "venue": "Pharmaceutical & Bioscience Society (PBSS)",
+      "date": "January 15, 2026"
+    },
+    {
+      "title": "Generating QSP-based digital twins for TCR-engineered T cell therapies",
+      "venue": "American Conference on Pharmacometrics (ACoP)",
+      "date": "October 21, 2025"
+    },
+    {
+      "title": "Protein language models to incorporate PKPD considerations in early antibody design and generation",
+      "venue": "American Conference on Pharmacometrics (ACoP)",
+      "date": "November 13, 2024"
+    },
+    {
+      "title": "Digital twins and applications",
+      "venue": "SimBiology Forum (with M Susilo)",
+      "date": "November 14, 2024"
+    },
+    {
+      "title": "A quantitative systems pharmacology model to characterize the PKPD relationship following treatment with IL15R agonists",
+      "venue": "AAPS PharmSci 360",
+      "date": "October 24, 2023"
+    },
+    {
+      "title": "From pharmacokinetics to cellular kinetics: generating QSP model-based digital twins for TCR-engineered T cell therapies",
+      "venue": "DIA Clinical Pharmacology Community Cell Therapy Seminar (with W Huang)",
+      "date": "June 2, 2023"
+    },
+    {
+      "title": "Cellular dynamics of TCR-engineered T cell therapies and future directions: a QSP modeling perspective",
+      "venue": "PBSS and AAPS Gene and Cell Therapy Products Community symposium",
+      "date": "November 15, 2022"
+    },
+    {
+      "title": "A quantitative systems pharmacology model to characterize the PKPD relationship following treatment with IL15R agonists",
+      "venue": "American Conference on Pharmacometrics (ACoP)",
+      "date": "November 10, 2021"
+    },
+    {
+      "title": "CaliPro: a calibration protocol for complex mathematical models in biology",
+      "venue": "DCMB Tools and Technology Seminar Series, University of Michigan Medical School",
+      "date": "October 29, 2020"
+    }
+  ]
+}

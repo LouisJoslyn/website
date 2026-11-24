@@ -1,0 +1,118 @@
+/* louisjoslyn.com: text-forward layout. One column, one accent color (links only). */
+
+:root {
+  --ink: #1b1d22;
+  --ink-muted: #5a606b;
+  --rule: #e3e5ea;
+  --bg: #fdfdfc;
+  --accent: #2f5fde;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace;
+  --measure: 700px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.skip {
+  position: absolute; left: -999px; top: 0;
+  background: var(--bg); padding: 8px 12px;
+}
+.skip:focus { left: 8px; top: 8px; z-index: 10; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--rule); }
+.site-header .wrap {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: 6px 24px; padding-top: 18px; padding-bottom: 14px;
+}
+.brand { color: var(--ink); font-weight: 600; font-size: 1.05rem; }
+.brand:hover { text-decoration: none; }
+.site-nav { display: flex; gap: 22px; font-size: 1rem; }
+.site-nav a { color: var(--ink-muted); }
+.site-nav a[aria-current="page"] { color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+/* Headings */
+h1, h2, h3 { font-weight: 600; line-height: 1.25; margin: 0; }
+h1 { font-size: 1.9rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.3rem; margin: 2.6rem 0 0.7rem; }
+h3 { font-size: 1.1rem; margin: 1.7rem 0 0.3rem; }
+p { margin: 0 0 1rem; }
+main { padding: 36px 0 56px; }
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.01em;
+}
+
+/* Identity block */
+.identity { display: flex; gap: 22px; align-items: center; margin-bottom: 1.6rem; }
+.identity img {
+  width: 120px; height: 120px; border-radius: 50%;
+  object-fit: cover; flex: none;
+}
+.identity .role { margin: 4px 0 0; color: var(--ink-muted); font-size: 1.05rem; }
+
+/* Proof points */
+.facts { margin: 1.4rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.facts li { padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 1rem; }
+
+/* Lists of entries */
+.entry { margin: 0 0 1.5rem; }
+.entry h3 { margin: 0 0 0.15rem; font-size: 1.05rem; }
+.entry p { margin: 0.25rem 0 0; }
+.links, .entry .links, .pub .links { font-family: var(--font-mono); font-size: 0.78rem; margin-top: 4px; }
+.entry .links a, .pub .links a { margin-right: 10px; }
+
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { display: flex; gap: 16px; margin-bottom: 0.5rem; }
+.news .meta { flex: none; width: 5.2rem; padding-top: 0.25rem; }
+
+/* Figures */
+figure { margin: 1.8rem 0; }
+figure img, figure svg { display: block; width: 100%; height: auto; }
+figcaption { margin-top: 8px; font-size: 0.92rem; color: var(--ink-muted); line-height: 1.5; }
+figcaption b { color: var(--ink); font-weight: 600; }
+
+/* Publications */
+.pub-year { font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-muted); margin: 2rem 0 0.4rem; font-weight: 500; }
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub { margin: 0 0 0.95rem; font-size: 1rem; line-height: 1.55; }
+.pub .authors b { font-weight: 700; }
+.pub em { font-style: italic; }
+.note { color: var(--ink-muted); font-size: 0.92rem; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--rule); padding: 20px 0 40px; font-size: 0.95rem; color: var(--ink-muted); }
+.site-footer p { margin: 0 0 6px; }
+.site-footer .sep { margin: 0 6px; }
+
+@media (max-width: 520px) {
+  body { font-size: 1.05rem; }
+  .identity { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .news li { flex-direction: column; gap: 0; }
+  .news .meta { width: auto; }
+}

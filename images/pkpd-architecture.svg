@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-labelledby="t d" font-family="'Source Serif 4', Georgia, serif">
+  <title id="t">pkpd-model-studio architecture</title>
+  <desc id="d">A user prompt goes to an agent. The agent calls three tools, which run the model library. Results return to the agent as figures and a written interpretation. A separate offline validation suite checks the model library.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5a606b"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #fdfdfc; stroke: #1b1d22; stroke-width: 1.2; }
+    .dash { fill: none; stroke: #5a606b; stroke-width: 1.2; stroke-dasharray: 5 4; }
+    .h { font-size: 15px; font-weight: 600; fill: #1b1d22; }
+    .s { font-size: 12.5px; fill: #5a606b; }
+    .lbl { font-size: 12px; fill: #5a606b; font-style: italic; }
+    .ln { stroke: #5a606b; stroke-width: 1.3; fill: none; }
+  </style>
+
+  <rect class="box" x="10" y="40" width="120" height="70" rx="3"/>
+  <text class="h" x="70" y="68" text-anchor="middle">User</text>
+  <text class="s" x="70" y="90" text-anchor="middle">plain-English</text>
+  <text class="s" x="70" y="104" text-anchor="middle">prompt</text>
+
+  <rect class="box" x="175" y="40" width="140" height="70" rx="3"/>
+  <text class="h" x="245" y="66" text-anchor="middle">Agent</text>
+  <text class="s" x="245" y="84" text-anchor="middle">Claude Agent SDK</text>
+  <text class="s" x="245" y="100" text-anchor="middle">skills in system prompt</text>
+
+  <rect class="box" x="360" y="30" width="140" height="90" rx="3"/>
+  <text class="h" x="430" y="54" text-anchor="middle">Tools</text>
+  <text class="s" x="430" y="72" text-anchor="middle">list_models</text>
+  <text class="s" x="430" y="87" text-anchor="middle">get_model_defaults</text>
+  <text class="s" x="430" y="102" text-anchor="middle">simulate</text>
+
+  <rect class="box" x="545" y="40" width="145" height="70" rx="3"/>
+  <text class="h" x="617" y="64" text-anchor="middle">Model library</text>
+  <text class="s" x="617" y="82" text-anchor="middle">4 ODE models</text>
+  <text class="s" x="617" y="96" text-anchor="middle">dosing · thresholds</text>
+
+  <path class="ln" d="M130 75 H173" marker-end="url(#a)"/>
+  <path class="ln" d="M315 66 H358" marker-end="url(#a)"/>
+  <path class="ln" d="M358 86 H317" marker-end="url(#a)"/>
+  <path class="ln" d="M500 66 H543" marker-end="url(#a)"/>
+  <path class="ln" d="M543 86 H502" marker-end="url(#a)"/>
+  <text class="lbl" x="337" y="58" text-anchor="middle">call</text>
+  <text class="lbl" x="522" y="58" text-anchor="middle">run</text>
+
+  <rect class="box" x="10" y="176" width="215" height="64" rx="3"/>
+  <text class="h" x="117" y="203" text-anchor="middle">Figures + interpretation</text>
+  <text class="s" x="117" y="222" text-anchor="middle">returned to the user</text>
+  <path class="ln" d="M245 110 V140 H117 V174" marker-end="url(#a)"/>
+
+  <rect class="dash" x="310" y="160" width="380" height="110" rx="3"/>
+  <text class="h" x="500" y="186" text-anchor="middle">Validation suite (offline, not in the agent loop)</text>
+  <text class="s" x="500" y="208" text-anchor="middle">SimBiology reference output (two-compartment, &lt;0.1% error)</text>
+  <text class="s" x="500" y="225" text-anchor="middle">Analytic PK identities (dose finding)</text>
+  <text class="s" x="500" y="242" text-anchor="middle">Mass balance and limiting cases (other models)</text>
+  <text class="s" x="500" y="259" text-anchor="middle">Known PRCC structure (sensitivity)</text>
+  <path class="ln" d="M617 160 V112" marker-end="url(#a)"/>
+  <text class="lbl" x="627" y="140">checks</text>
+</svg>

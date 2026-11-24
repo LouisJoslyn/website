@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Louis Joslyn</title>
+<meta name="description" content="Research by Louis Joslyn: multiscale immunology, QSP for biologics and cell therapies, digital twins, machine learning for pharmacokinetics, and agentic modeling.">
+<link rel="canonical" href="https://louisjoslyn.com/research.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research | Louis Joslyn">
+<meta property="og:description" content="Multiscale immunology, QSP, digital twins, machine learning for PK, and agentic modeling.">
+<meta property="og:image" content="https://louisjoslyn.com/images/og-image.png">
+<meta property="og:url" content="https://louisjoslyn.com/research.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Louis Joslyn</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+  <h1>Research</h1>
+  <p style="margin-top:0.8rem;">A general collection of different types of projects I've initiated and worked on.</p>
+
+  <h2 id="immunology">1. Multiscale immunology</h2>
+  <p>My Ph.D. at the University of Michigan (2016 to 2021, advisors Denise Kirschner and Jennifer Linderman) modeled T cells in <i>Mycobacterium tuberculosis</i> infection at the scale of the cell, the granuloma, the lung, and the whole host. HostSim, the first whole-host, multi-scale model of the immune response, simulates virtual hosts and shows that early immune events predict infection outcomes. CaliPro, the calibration protocol I developed for these models, is well cited and used across the community.</p>
+  <p class="links meta">
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9169921/">HostSim (J Theor Biol 2022)</a> ·
+    <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007280">MultiGran whole-lung model (PLoS Comput Biol 2020)</a> ·
+    <a href="https://doi.org/10.1007/s12195-020-00650-z">CaliPro (Cell Mol Bioeng 2020)</a> ·
+    <a href="https://www.youtube.com/watch?v=anOs7Vy8Kew">CaliPro video</a>
+  </p>
+  <!-- FIGURE SLOT (needs Louis's OK to download; CC-BY with citation):
+       Whole-lung TB model figure from Wessler & Joslyn et al., PLoS Comput Biol 2020, or HostSim figure from J Theor Biol 2022 (PMC open version).
+       <figure><img src="images/fig-hostsim.png" alt="TODO alt text" width="700" height="TODO">
+       <figcaption><b>Fig. 2.</b> TODO caption. From Joslyn et al., J Theor Biol 2022.</figcaption></figure> -->
+
+  <h2 id="qsp">2. QSP for biologics and cell therapies</h2>
+  <p>At Genentech (2021 to present, Principal Scientist since 2023) I build reusable QSP platform models and develop mechanistic models to support drug development. The oncology platforms cover TCR-engineered and CAR T cell therapies, ADCs, and various bispecifics. In immunology, platform models guide the molecular design of multi-specifics for COPD and IBD. Together they have supported more than 12 programs, from therapeutic design to first-in-human dose selection and clinical translation strategy.</p>
+  <p class="links meta">
+    <a href="https://www.sciencedirect.com/science/article/pii/S092809872500301X">Engineered IL-15 QSP (Eur J Pharm Sci 2025)</a> ·
+    <a href="publications.html#papers">PD1/IL15 first-in-human dose selection (Front Pharmacol 2024)</a> ·
+    <a href="publications.html#papers">Minimal PBPK-PD of bispecifics (CPT:PSP 2025)</a> ·
+    <a href="https://link.springer.com/article/10.1208/s12248-025-01017-w">Cellular kinetics review (AAPS J 2025)</a>
+  </p>
+  <!-- FIGURE SLOT: IL-15 QSP figure, Eur J Pharm Sci 2025. Check the license first; if it is not CC-BY, use a schematic Louis redraws. -->
+
+  <h2 id="twins">3. Digital twins</h2>
+  <p>A digital twin is a mechanistic model fit to an individual patient. In a 2024 paper in <i>npj Systems Biology and Applications</i>, twins of patients with solid tumors treated with TCR-engineered T cells identify the stem-cell-memory-like subset (Tscm) as critical for persistence. Genentech made a short video about the approach, and I have presented it at ACoP (2025), the SimBiology Forum (2024), and a DIA cell therapy seminar (2023). I co-developed gQSPTwin, a tool that automates digital twin generation.</p>
+  <p class="links meta">
+    <a href="https://doi.org/10.1038/s41540-024-00335-7">npj Syst Biol Appl 2024</a> ·
+    <a href="https://www.youtube.com/shorts/UbWUT-AejZY">Genentech "In the Lab" video</a>
+  </p>
+  <!-- FIGURE SLOT: digital-twin fits from Joslyn & Huang et al., npj Syst Biol Appl 2024 (open access, CC-BY).
+       Caption format: "Fig. 3. Digital-twin fits for ... From Joslyn & Huang et al., npj Syst Biol Appl 2024, CC-BY." -->
+
+  <h2 id="ml">4. Machine learning for pharmacokinetics</h2>
+  <p>The neural ODE framework for preclinical PK of large molecules is the subject of a 2025 patent application and an ACoP 2024 poster. I also explored sparse identification of nonlinear dynamics (SINDy) for data-driven PK models. At ACoP 2024 I spoke on protein language models that bring PKPD considerations into early antibody design, and I co-chaired the session on deep learning in PKPD and pharmacometrics.</p>
+  <p class="links meta"><a href="publications.html#abstracts">ACoP 2024 abstract</a> · <a href="publications.html#talks">Talks</a></p>
+  <p>LEAP is a bioinformatics method developed in-house that analyzes genomic data (single-cell or bulk RNA-seq) to predict clinical target-mediated drug disposition (TMDD) for large molecule therapeutics. A provisional patent application was filed in 2026.</p>
+
+  <h2 id="agentic">5. Agentic modeling</h2>
+  <p>I work on agent systems that build, run, and check mechanistic models. At ACoP 2026 I gave a talk on LUCY and co-chaired the AI/ML Roller Coaster session. <a href="https://acop2026.eventscribe.net/fsPopup.asp?efp=SkhTQlZDVkcyMjQ4NQ&amp;PresentationID=1819393&amp;rnd=0.2076273&amp;mode=sessionInfo">[abstract]</a></p>
+  
+  <p>LUCY (Logical Understanding of Complex sYstems) is a multi-agent framework in which several expert agents design, calibrate, and return a mechanistic model from a single prompt and dataset. A provisional patent application was filed in 2026. A paper is in draft, with submission to a journal expected by the end of 2026.</p>
+
+  <h3>pkpd-model-studio <span class="links meta"><a href="https://github.com/LouisJoslyn/pkpd-model-studio">[code]</a></span></h3>
+  <p>An open-source library of four mechanistic PK/PD models with an agent-driven dashboard. The models are transcribed from the SimBiology models in the gPKPDSim paper (<i>J Pharmacokinet Pharmacodyn</i> 2017). All models and data are public or synthetic.</p>
+  <p>The agent runs on the Claude Agent SDK. It calls three tools to list models, read default parameters, and simulate dose sweeps, parameter variants, repeat dosing, and threshold crossings. Beyond forward simulation, the library solves for the dose that reaches a target Cmax, trough, AUC, or time above a threshold, using bisection root-finding. It also ranks which parameters drive an outcome with Latin hypercube sampling and partial rank correlation (PRCC), with multiple-comparison correction.</p>
+
+  <figure>
+    <img src="images/pkpd-architecture.svg" alt="Diagram: a user prompt goes to an agent, which calls three tools that run the model library. Figures and an interpretation return to the user. An offline validation suite checks the model library." width="700" height="300">
+    <figcaption><b>Fig. 1.</b> Architecture of pkpd-model-studio. The validation suite runs offline against the model library and is not part of the agent loop.</figcaption>
+  </figure>
+
+  <p><b>Validation.</b> The two-compartment model matches literal SimBiology output to under 0.1% maximum relative error, using the paper's fitted parameters. No reference output was recoverable for the other three models, so they pass structural checks instead: mass balance, exact reduction to the two-compartment model in the no-binding limit, the expected direction of response in all four indirect-response variants, and dose superposition. Dose finding is checked against analytic identities (for an IV bolus, Cmax equals dose over V1). Sensitivity analysis is checked against known structure: Cmax is driven almost entirely by V1 and AUC by CL.</p>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Louis Joslyn, Principal Scientist, Modeling &amp; Simulation, Genentech</p>
+    <p><a href="mailto:louisjoslyn5@gmail.com">louisjoslyn5@gmail.com</a><span class="sep">·</span><a href="https://scholar.google.com/citations?user=Fk8C2fcAAAAJ&amp;hl=en">Google Scholar</a><span class="sep">·</span><a href="https://github.com/LouisJoslyn">GitHub</a><span class="sep">·</span><a href="https://www.linkedin.com/in/louis-joslyn">LinkedIn</a><span class="sep">·</span><a href="https://www.researchgate.net/profile/Louis-Joslyn">ResearchGate</a></p>
+  </div>
+</footer>
+</body>
+</html>

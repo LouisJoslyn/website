@@ -1,0 +1,15 @@
+# Triggers a Cloudflare Pages rebuild each day so the Google Scholar
+# citation count (tools/update_citations.py) stays current.
+# Needs a repo secret CF_DEPLOY_HOOK containing the Pages Deploy Hook URL.
+name: daily-deploy
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+jobs:
+  hook:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsS -X POST "$CF_DEPLOY_HOOK"
+        env:
+          CF_DEPLOY_HOOK: ${{ secrets.CF_DEPLOY_HOOK }}

@@ -11,7 +11,7 @@ The domain has no mail records. Contact email is a Gmail address.
 - [ ] Create repo `louisjoslyn.com` (private is fine) under LouisJoslyn.
 - [ ] From this folder: `git remote add origin <url> && git push -u origin main`.
 
-## 2. Cloudflare Pages
+## 2. Cloudflare (this ended up as a Worker named `website`, not a Pages project)
 - [ ] Create a free Cloudflare account.
 - [ ] Workers & Pages > Create > Pages > Connect to Git > pick the repo.
 - [ ] Build command: `python3 tools/update_citations.py`. Output directory: `.` (a dot).
@@ -19,10 +19,10 @@ The domain has no mail records. Contact email is a Gmail address.
 
 ## 3. Move DNS
 - [ ] Cloudflare: Add a site > louisjoslyn.com > Free plan. Confirm it imported the TXT record. Delete the A records pointing to 192.0.78.x (WordPress).
-- [ ] Pages project > Custom domains > add `louisjoslyn.com` and `www.louisjoslyn.com`.
+- [ ] Worker > Domains > Add Domain > Custom domain: `louisjoslyn.com` (subdomain blank), then `www`. Delete any old `*`/`www` CNAMEs first.
 - [ ] WordPress.com: Domains > louisjoslyn.com > Name servers > use custom, enter the two Cloudflare nameservers.
 - [ ] Wait for Cloudflare to show the zone Active (minutes to a few hours).
-- [ ] Cloudflare > Rules > Redirect Rules: `www.louisjoslyn.com/*` -> `https://louisjoslyn.com/$1` (301).
+- [ ] Cloudflare > Rules > Redirect Rules: Request URL `https://www.louisjoslyn.com/*`, target `https://louisjoslyn.com/${1}`, 301, preserve query string.
 
 ## 4. Retire WordPress hosting
 - [ ] Only after the site loads on louisjoslyn.com. WordPress.com > Upgrades > Purchases: cancel the site plan and turn off its auto-renew. Keep the domain registration. Confirm the domain still shows as active afterward.
